@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    http-equiv="Content-Security-Policy"
+    content="script-src 'self' 'unsafe-inline'"
+  />
+    <link rel="stylesheet" href="style.css" />
+    <script src="renderer.js" defer></script>
+    <title>Stream Desktop Overlay</title>
+</head>
+<body onbeforeunload="return buildJsonFromFormForSaving()">
+    <h1>
+        Stream Desktop Overlay<br>
+        <font size="3">by Grasshyren</font>
+    </h1>
+    <div
+      class="ui"
+    >
+        <form id="table-data">
+            <table id="table1" cellspacing="0" cellpadding="0">
+                <thead>
+                    <th style="width:5%">Enabled</th>
+                    <th style="width:15%">Name</th>
+                    <th style="width:15%">URL</th>
+                    <th style="width:10%">Opacity</th>
+                    <th style="width:5%">Maximized</th>
+                    <th style="width:10%">X</th>
+                    <th style="width:10%">Y</th>
+                    <th style="width:10%">Width</th>
+                    <th style="width:10%">Height</th>
+                </thead>
+            </table>
+        </form>
+        <form id="submit-form">
+            <div class="submitButton">
+                <button type="button" name="frameToggleBtn" id="frameToggleBtn" class="" onclick = "rendererFrameToggle()">Movable Windows</button>
+                <button type="button" name="submitBtn" id="submitBtn" class="" onclick = "changeSubmitButtonText()">Launch Overlays</button>
+                <button type="button" name="addButton" id="plusButton" class="" onclick = "addARow()">Add</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

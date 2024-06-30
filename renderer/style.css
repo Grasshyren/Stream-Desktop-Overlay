@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  border: none;
+}
+
+.submitButton {
+    margin: 15px;
+    text-align: center;
+  }
+
+.urlInput {
+  margin: 15px;
+  text-align: center;
+}

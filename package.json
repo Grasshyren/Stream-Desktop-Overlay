@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    
+  },
+  "name": "stream-desktop-overlay",
+  "productName": "Stream Desktop Overlay",
+  "version": "0.9.0",
+  "description": "App to display websites on top of your Desktop. When used with sites like StreamElements, can display alerts and even stream chat directly onto your monitor.",
+  "main": "main.js",
+  "devDependencies": {
+    "@electron/packager": "^18.3.3",
+    "electron": "^31.0.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Grasshyren",
+  "license": "MIT"
+}
