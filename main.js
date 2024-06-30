@@ -72,7 +72,7 @@ const menu = [
 function closeOpenOverlayWindows(){
     var windows = BrowserWindow.getAllWindows();
     for(var i = 0; i < windows.length; i++){
-        if(windows[i].title !== 'Desktop Overlay'){
+        if(windows[i].title !== 'Stream Desktop Overlay'){
             windows[i].close();
         }
     }
@@ -132,7 +132,7 @@ function createOverlayWindow(sentvariables) {
 
 function createSettingsWindow() {
     settingsWindow = new BrowserWindow({
-        title: 'Desktop Overlay',
+        title: 'Stream Desktop Overlay',
         width: isDev ? 1800 : 1300,
         height: 500,
         webPreferences: {
